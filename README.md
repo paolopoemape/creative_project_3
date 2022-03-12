@@ -1,4 +1,4 @@
-# grocery-store
+# Creative-Project_3
 
 ## Project setup
 ```
