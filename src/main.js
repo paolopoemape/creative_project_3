@@ -13,7 +13,6 @@ import VueGeolocation from 'vue-browser-geolocation'
 Vue.config.productionTip = false
 export const eventBus = new Vue();
 import * as VueGoogleMaps from 'vue2-google-maps'
-// require('dotenv').config();
 Vue.use(BootstrapVue)
 
 Vue.use(VueGeolocation)
