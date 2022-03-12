@@ -1,23 +1,24 @@
 let mock = [{
     id: 1,
-    name: "Egg Salad",
-    price: "$5.62",
+    name: "Krisp1kutz",
+    phone: "(801) 377-2465",
     country: "United States",
-    image: 'egg-salad.jpg'
+    city: 'Provo',
+    
   },
   {
     id: 2,
-    name: "Sweet Potato",
-    price: "$2.41",
-    country: "Brazil",
-    image: "sweet-potato.jpg"
+    name: "Salty Barbers",
+    phone: "(801) 310-3616",
+    country: "United States",
+    city: 'Provo'
   },
   {
     id: 3,
-    name: "Foccacia Bread",
-    price: "$5.92",
+    name: "Boneyard Barbering Provo",
+    phone: "(385) 283-7752",
     country: "United States",
-    image: 'focaccia.jpg'
+    city: 'Provo'
   },
   {
     id: 4,

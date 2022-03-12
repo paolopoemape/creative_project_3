@@ -3,24 +3,24 @@
   <div id="menu">
     <div id="brand">
       <router-link to="/">
-        <img src="/images/logo.png">
-      </router-link>
+      <div class="menu-item icon">
+        <font-awesome-icon icon="fa-solid fa-scissors" size="6x" />
+      </div>
+      <div id="sideicon">
+      <div class="menu-item title">
+       <h1>The Barbershop Review</h1>
+       </div>
+       </div>
+   </router-link>
     </div>
     <div id="side">
       <router-link to="/browse">
         <div class="menu-item browse">
-          <img src="/images/globe.png">
-          <p>Browse</p>
+        <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+          <p>Search</p>
         </div>
       </router-link>
-      <router-link to="/cart">
-        <div class="menu-item">
-          <img src="/images/love.png">
-              <div class="cart">
-                <p>{{this.$root.$data.cart.length}} items</p>
-            </div>
-        </div>
-      </router-link>
+
     </div>
 
   </div>
@@ -59,11 +59,21 @@ body {
   height: 200px;
 }
 
+#title{
+  width: 180px;
+  display:flex;
+}
 #side {
   grid-area: side;
   display: flex;
   justify-content: flex-end;
 }
+#sideicon {
+  grid-area: side;
+  display: flex;
+  justify-content: c;
+}
+
 
 #side img {
   width: 50px;

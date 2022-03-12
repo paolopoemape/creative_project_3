@@ -1,67 +1,76 @@
 <template>
 <div class="wrapper">
+
   <div class="products">
-  <h1 v-if="this.$root.$data.cart.length === 0">Cart is empty!</h1>
-
-    <div class="product" v-for="item in sortedCategories" :key="item.id">
       <div class="info">
-        <h1>{{item.name}}</h1>
-        <h1>{{item.country}}</h1>
-        <h1>Quantity: {{getProductQuanlity(item.id)}}</h1>
+      <div>
+      <button class="btn btn-info" @click="openModal">Map <font-awesome-icon icon="fa-solid fa-map" /></button>
+        <ModalC v-model="modalOpen"></ModalC>
+      </div>
+        <h1>{{showStore.name}}</h1>
+        <h1>{{showStore.country}}</h1>
+        <h1>Phone number: {{showStore.phone}}</h1>
+        <div class="image">
+            <img :src="'/images/products/'+ showStore.image">
+        </div>
+
 
       </div>
-      <div class="image">
-        <img :src="'/images/products/'+item.image">
-      </div>
-      <div class="price">
-        <button @click="remove(item)" class="auto">Remove</button>
-      </div>
-    </div>
-  </div>
-  <div class="footer">
-    <footer class="site-footer navbar-dark bg-dark">
-      <a href="https://github.com/paolopoemape/grocery-store-project">Github Link</a><i class="fab fa-github"></i>
-    </footer>
+      <div class="footer">
+         <footer class="site-footer navbar-dark bg-dark">
+           <a href="https://github.com/paolopoemape/grocery-store-project">Github Link</a><i class="fab fa-github"></i>
+         </footer>
+       </div>
   </div>
 </div>
+
+
 </template>
 
 <script>
+import ModalC from "@/components/ModalC.vue";
 
 export default {
   name: 'CartList',
+  components:{
+    ModalC
+  },
+data(){
+  return{
+    modalOpen: false,
+    id: '',
+    name: '',
 
-  props: {
-    cart: Array
-          },
-
-computed: {
-  sortedCategories() {
-    const filteredProducts = this.cart.reduce((p,c) => {
-      p[c.name] = c
-      return p
-    }, {})
-    return Object.values(filteredProducts).sort((a,b) => a.name.localeCompare(b.name))
   }
 },
-  methods: {
-    remove(item) {
-      this.$root.$data.cart.splice(this.$root.$data.cart.indexOf(item),1);
-    },
-    getProductQuanlity(itemid) {
-         var qty = 0;
-         for(var k =0; k < this.$root.$data.cart.length; k++){
 
-            if(this.$root.$data.cart[k].id == itemid){
-              qty++;
-            }
+  props: {
+    store: Array
+  },
+  computed: {
+  showStore() {
+    const id = this.$route.params.id;
+    const store = this.$root.$data.stores.find((p) => p.id == id);
+    return store;
+  },
+},
 
-        }
-          return qty;
-      },
+mounted() {
+   this.geolocate();
+ },
+methods: {
+  openModal() {
+       this.modalOpen = !this.modalOpen;
+   },
+   geolocate: function() {
+       this.center = {
+         lat: this.$root.$data.stores.lat,
+         lng:  this.$root.$data.stores.lat,
+       };
+   },
+},
 
 
-  }
 
 
 }
@@ -102,7 +111,9 @@ computed: {
   margin-top: 50px;
   width: 200px;
 }
-
+img{
+  width: 100%;
+}
 .product img {
   border: 2px solid #333;
   height: 250px;
@@ -119,12 +130,14 @@ computed: {
 .info {
   background: #F2921D;
   color: #000;
-  padding: 10px 30px;
-  height: 150px;
+  height: 300px;
+  width: 400px;
+  align-text: center;
 }
 
 .info h1 {
   font-size: 16px;
+  text-align: center;
 }
 
 .info h2 {

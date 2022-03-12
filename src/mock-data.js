@@ -1,358 +1,264 @@
 let mock = [{
     id: 1,
-    name: "Egg Salad",
-    price: "$5.62",
+    name: "Krisp1kutz",
+    phone: "(801) 377-2465",
     country: "United States",
-    image: 'egg-salad.jpg'
+    image: 'Krispikutz.png',
+    city: 'Provo',
+    review_1: 'This was the best barber shop I\'ve been do!! Everybody is down to earth and very personal which makes it a comfortable environment. They are very thorough with that cut and ask a variety of questions before as well to make sure your getting what you paid for. I got the cleanest get ever, and they are over the top with the post cut additives. Yall better go to Krisp1kutz if you want somethin special',
+    review_2: 'I had a buddy refer me to Keenan because I was tired of the inconsistency in my haircuts from local shops and he gave me what I’d say is one of the best cuts I’ve ever had. He is wicked talented, super friendly, and clearly works to please and master his trade. 100% I’ll be going to him now.',
+    review_3: 'Keenan had me cleaned up real nice. These guys will take great care of you and are the real deal, professional guys.',
+    lat: 40.25122337899975,
+    lng: -111.66853474232741
   },
   {
     id: 2,
-    name: "Sweet Potato",
-    price: "$2.41",
-    country: "Brazil",
-    image: "sweet-potato.jpg"
+    name: "Salty Barbers",
+    phone: "(801) 310-3616",
+    country: "United States",
+    image: 'salty.png',
+    city: 'Provo',
+    review_1: 'My girlfriend went in to get her hair cut, and I waited there with her, everyone is so amazing and the vibes of this place are immaculate. 10/10 would get my hair cut here',
+    review_2: 'I have been going to Dave (the owner) for my haircuts for years now. He has always prioritized quality for all his cuts, and he has brought that same quality to his shop. The place is clean, bright, and friendly. Everyone there is a blast to talk to, and give excellent haircuts.',
+    review_3: 'Connor gave me one of the best haircuts and beard trims I have ever had. He was meticulous with every cut and was patient when it came to prepping my beard to be trimmed. Very therapeutic experience. Finally found myself a barber!',
+    lat: 40.23446855457113,
+    lng: -111.65922039262031
+
   },
   {
     id: 3,
-    name: "Foccacia Bread",
-    price: "$5.92",
+    name: "Boneyard Barbering Provo",
+    phone: "(385) 283-7752",
     country: "United States",
-    image: 'focaccia.jpg'
+    image: 'Boneard.png',
+    city: 'Provo',
+    review_1: 'They were able to accommodate me without an appointment! This is literally the best haircut I’ve had in years. Jonathan did a great job and was able to actually get some volume in my hair. 10/10 recommend Jonathan and boneyard',
+    review_2: 'If you\'\re looking for a really good fade, Boneyard Barbering is the place to go. I\'\ve been going with Kenia every two weeks for the past year and she never disappoints. She is very detailed with her cuts and makes sure you leave satisfied.',
+    review_3: 'Thanks to Boneyard and especially Ally on her amazing abilities and skills in barbering. My boys always have the greatest experience and best looking haircuts! We love Ally and highly recommend her for your next appointment.',
+    lat: 40.2397480357384,
+    lng:-111.66191715959857
+
   },
   {
     id: 4,
-    name: "Canned Lotus Rootlets",
-    price: "$3.58",
+    name: "The Man Barber",
     country: "United States",
-    image: 'lotus-rootlets.jpg'
+    image: 'ThemanBarber.png',
+    phone: '(801) 896-7163',
+    city: 'Provo',
+    review_1: 'This place is great! Love the atmosphere and it\'s clear the barbers know what they\'re doing. Wanted to leave a shout out to Dresden from whom I have had two haircuts now: he always does a great job! Definitely going back for my next haircut.',
+    review_2: 'If you\'\re looking for a really good fade, Boneyard Barbering is the place to go. I\'\ve been going with Kenia every two weeks for the past year and she never disappoints. She is very detailed with her cuts and makes sure you leave satisfied.',
+    review_3: 'Thanks to Boneyard and especially Ally on her amazing abilities and skills in barbering. My boys always have the greatest experience and best looking haircuts! We love Ally and highly recommend her for your next appointment.',
+    lat: 40.23410211835363,
+    lng:-111.66093211542383
   },
   {
     id: 5,
-    name: "Frilled Toothpicks",
-    price: "$2.47",
-    country: "Canada",
-    image: 'toothpicks.jpg'
-
+    name: "Johnny's Barber Shop",
+    country: "United States",
+    image: 'JohnnysBarbershop.png',
+    city: 'Provo',
+    phone: '(801) 377-7758',
+    review_1: 'What a wonderful man and barber Johnny is! I\'ve finally found my local barber and won\'t be going anywhere else. Prices are very fair and service was excellent.',
+    review_2: 'Johnny is the man! 80 years old and still going strong. He\'s the best barber in town. With over 50 years of haircutting experience, he knows what he\'s doing. I\'ll never go to another barber. Just call ahead and make an appointment, he can usually accommodate you pretty well. He is closed Saturday, Sunday, and Monday. He takes cash or checks, no credit cards so be aware of that.',
+    review_3: 'I love Johnny! He is a great guy. Fun to talk to and he has great energy! He you don\'t like the way your hair is looking just tell him and he will fix it. Thanks',
+    lat: 40.23821220093403,
+    lng:-111.65919765775374
   },
   {
     id: 6,
-    name: "Rubbed Sage",
-    price: "$8.77",
-    country: "Brazil",
-    image: 'sage-rubbed.jpg'
+    name: "Reids Barber Shop",
+    country: "United States",
+    image: 'Reids.png',
+    city: 'Provo',
+    phone: '(801) 404-3372',
+    review_1: 'Reid has cut my hair every two weeks for the past 20 years—literally! That\'s more than 500 haircuts! I can\'\t leave a better review than that. :-)',
+    review_2: 'Reid is awesome and super friendly. He goes the extra mile and he does a fantastic job every time I go in.',
+    review_3: 'Great place to get a good hair cut especially during the worries about covid-19  it is in his basement. No other people there.',
+    lat: 40.229767764710694,
+    lng: -111.68979008877803
   },
   {
     id: 7,
-    name: "Langers Mango Nectar",
-    price: "$9.24",
-    country: "Brazil",
-    image: 'mango-nectar.jpg'
+    name: "Tom Nox Barbershop",
+    country: "United States",
+    city: 'Provo',
+    image: 'TomNox.png',
+    phone: '(385) 842-1153',
+    review_1: 'I have always had cheap haircuts in the past and didn\'\t know what I was missing. I had Tom Nox recommended to me and I figured that I would give it a shot. It was amazing. Great haircut. The barber was able to give me personalized recommendations based on my preferred style and hair type. I would definitely recommend it and intend to go back for my next haircut.',
+    review_2: 'I’ll try not to be too over the top, being the first review and all, but I know the reviews that are sure to come will echo or exceed my words. I was in the need of a haircut before a date tonight, I am actually exceptionally picky about who cuts my hair, and the guy I had been regularly seeing was too hard to get into at a time that worked for me, so in my search for a luxury barbershop I came across Tom Nox and booked a VIP service with Maka, and I was not disappointed in the slightest, she took her time on my hair and eyebrows making sure I looked my best, I can tell she really cares about how I looked and she did everything she could to have me looking at my best when I walked out of the shop, will definitely be back, and I would definitely recommend anyone who wants a legitimate haircut from a professional who takes their time and cares and is not just trying to get you out of their chair, I was also impressed by the cut that the other barber Ben was giving, while he didn’t cut my hair, I would definitely let him, this barbershop seems to have taken great pains to only staff the best people, and they are people who care about giving you the best service around. 5 stars 10/10 A+',
+    review_3: 'I came to Tom Nox to get my eye brows shaped and a hair cut. The service is great, Maka did a fabulous job. This is a place I would recommend to anyone and for Maka I’d give her a two thumbs up.',
+    lat: 40.24131323382575,
+    lng: -111.66177624601987
   },
+
   {
     id: 8,
-    name: "Cucumber",
-    price: "$3.02",
-    country: "Canada",
-    image: 'cucumber.jpg'
+    name: "Una's Barber Shop",
+    country: "United States",
+    city: 'Orem',
+    image: 'una.png',
+    phone: '(801) 607-1072',
+    review_1: 'Do yourself a favor, come to this place and get the best haircut of your life. The only downside you might have to wait like 30 minutes if you walk in but other than that. This is the place.',
+    review_2: 'Una always dices you up nice with a fresh fade. I’ve gone to Tito’s and GOAT but nothing beats Una because he does such a good job. I can’t go anywhere else now and definitely recommend hitting him up for a cut.',
+    review_3: 'David was my barber today. He did an excellent job. Place was really nice, they were right on time, and it was easy to schedule. I highly recommend it.',
+    lat: 40.26842322524529,
+    lng: -111.68152221542289
   },
   {
     id: 9,
-    name: "Fava Beans",
-    price: "$4.76",
-    country: "Brazil",
-    image: 'fava-beans.jpg'
-
+    name: "Lino's Barber Shop",
+    phone: "(801) 655-3712",
+    country: "United States",
+    city: 'Orem',
+    image: 'LinoBarbershop.png',
+    review_1: 'Awesome service and amazingly nice guys. Come get a haircut you will love it. They can do anything you need. 5 Stars all the way!!!',
+    review_2: 'Love my personal barber Jonathan! Her helps me always stay fresh and clean! He is always kind and nice always sharing uplifting/inspirational message! He is well skilled in barbering and hair cutting! He always makes me look good for my business attire',
+    review_3: 'Jonathan is a fantastic barber! He always does quality work and I would highly recommend him if yo\'\re looking for a barber in Utah County! I love the environment at Lino\'s. Always a good time!.',
+    lat: 40.27574198771812,
+    lng: -111.68739454425778
   },
   {
     id: 10,
-    name: "Coconut",
-    price: "$2.50",
-    country: "Brazil",
-    image: 'coconut.jpg'
+    name: "Vicio Barber Studio",
+    country: "United States",
+    phone: '(801) 910-6695',
+    city: 'Orem',
+    image: 'viciobarbershop.png',
+    review_1: 'Fantastic barber who is passionate about his trade. I got a haircut and liked it so much I booked a beard trim a few days later. I will be back',
+    review_2: 'You can\'\t look for a better and more professional barber! He does such a fine job and takes great pride in his work. I regularly get my beard trimmed and shaped by Vinny and I am always impressed with how good it looks!',
+    review_3: 'I have been going to Vinny for my haircuts since October of 2018. He is the best barber in Utah County. I have tried multiple hairstyles with him, and every single style has looked great thanks to him!',
+    lat: 40.27574198771812,
+    lng: -111.68739454425778
   },
   {
     id: 11,
-    name: "Kettle Potato Chips",
-    price: "$6.70",
+    name: "The Salt Lake Barber Company",
     country: "United States",
-    image: "potato-chips.jpg"
+    city: 'Salt Lake City',
+    phone: '(385) 261-2196',
+    image: "saltlakebarbercompany.png",
+    review_1: 'Fantastic haircut by Jesse! The location is very well kept up, clean, and the timeliness of the appointment system made getting a cut here a no brainer. Will definitely be coming back',
+    review_2: 'One of the best cuts I\'\ve ever had. Shop is awesome, everyone was fun and friendly, but most importantly my fade is razor sharp. Truly a 10/10 experience and haircut.',
+    review_3: 'Great barbershop, very clean, and professional. I’ve been going to Aubrisha for over a year, and she is by far the best. She gives a solid haircut every time, she has great skills, and a great personality. Overall the best barbershop I’ve been to.',
+    lat:40.75189833411306,
+    lng:-111.89068760376057
   },
   {
     id: 12,
-    name: "Flour - Rye",
-    price: "$1.14",
-    country: "Canada",
-    image: "rye-flour.jpg"
+    name: "City Barbers ™",
+    country: "United States",
+    image: "citybarbers.png",
+    city: 'Salt Lake City',
+    phone:'(801) 243-6915',
+    review_1: 'Carlin was amazing. He was meticulous about quality and nailed the hair cut. We will definitely be back.',
+    review_2: 'Been here several times because my hair keeps growing. This place takes the hair cutting business serious. First time with Samantha and I can tell you she is legit. Like  that bartender you go to somehow knows every drink in their brain, tell her what you want, and she just knows. Its pretty reassuring.',
+    review_3: 'Absolutely amazing. The barbers know what they\'re doing and all have slick hairstyles themselves. I didn\'t see anyone walk out of there with a bad cut. Worth the price 1000% for the full service.',
+    lat:40.76318222451069,
+    lng:-111.88382374240038
   },
   {
     id: 13,
-    name: "Feta Chees",
-    price: "$6.92",
-    country: "Brazil",
-    image: "feta-cheese.jpg"
+    name: "Honest Cuts Barbershop",
+    country: "United States",
+    city: 'Salt Lake City',
+    phone: '(801) 210-7585',
+    image: "Honest.png",
+    review_1: 'Best barber I’ve been to in SLC! Victor is professional, friendly, and very talented. Plus, one of the best Barbershop atmospheres I’ve been in. This is one of those places you want to be a regular at!.',
+    review_2: 'Very personable friendly staff, I left with great cuts everytime.',
+    review_3: 'Got a fresh cut from Victor. 10/10 service and quality. Def coming back.',
+    lat:40.74962959195229,
+    lng:-111.88329141725559
   },
   {
     id: 14,
-    name: "Cheddar Cheese",
-    price: "$5.36",
-    country: "Mexico",
-    image: "cheddar-cheese.jpg"
+    name: "Barbiere Barbershop",
+    country: "United States",
+    city: 'Salt Lake City',
+    image: "barberie.png",
+    phone: '(385) 240-5104',
+    review_1: 'I love the vibe and aesthetic of this place, but also always love having my hair cut by Cody! He\'s amazing but everyone who works here seems great too. It\'s a nice, relaxed environment with cool surrounding stores to browse before or after your appointment.',
+    review_2: 'Kristina, Cody, and Faith are all absolute pros and incredible humans. I’ve gotten the best hair cuts of my life here by a long shot.. come here and you will be impressed as well!.',
+    review_3: 'Best haircut experience that I’ve had in years, or perhaps ever. Cody has done it twice now and each time it has been five stars as far as experience, and quality of cut.',
   },
   {
     id: 15,
-    name: "Capers",
-    price: "$4.18",
+    name: "Liberty Wells Barber Co.",
     country: "United States",
-    image: "capers.jpg"
+    image: "liberty.png",
+    city: 'Salt Lake City',
+    phone: '(801) 649-9322',
+    review_1: 'This barber gave my grandson the best cut he has ever had in 6 years.  Perfect fade with either messy or groomed top.  Will be his barber from now on!',
+    review_2: 'I love the atmosphere there, and Dustin gives the best haircuts/fade in the valley. Takes pride and care in his work. Its the only barber ill go to and I live 40 minutes away.',
+    review_3: 'Great haircuts by good people! This was my first time to Liberty Wells new location. Cool atmosphere and good vibes. Dustin does the best hair cuts every time with great prices. Will continue to go back!.',
+    lat:40.76379779711121,
+    lng:-111.9013691307503
   },
   {
     id: 16,
-    name: "Baguette",
-    price: "$9.18",
-    country: "Mexico",
-    image: "baguette.jpg"
+    name: "Trolley Square Barbers",
+    country: "United States",
+    image: "Trolley.png",
+    city: 'Salt Lake City',
+    phone: '(801) 738-1578',
+    review_1: 'Dillan has been my barber for more than a year and he is amazing barber! I always get asked who does my fades. The shop also has a nice feel to it and it’s conveniently located.',
+    review_2: 'Rick did an excellent job cleaning up my beard, he’s a great guy who does great work!',
+    review_3: 'In 2018, I  was looking for barbers, not satisfied with any. Then I got a haircut from Dan Petersen, and I\'ve been going back ever since! It\'s great to have a barber who knows what he\'s doing.',
+    lat: 40.75729111750767,
+    lng: -111.8727460270606
   },
   {
     id: 17,
-    name: "Lasagna Noodles",
-    price: "$4.73",
-    country: "Brazil",
-    image: "lasagna-pasta.jpg"
+    name: "Eves & Sons Barbers",
+    country: "United States",
+    image: "eves.png",
+    city: 'Salt Lake City',
+    phone: '(801) 583-7297',
+    review_1: 'Erin is the best!! I have a really simple haircut, but literally everyone seems to mess it up. But not her! She gets it right every time, is very meticulous, and actually listens to what I’d like her to do.',
+    review_2: 'My go to shop in Salt Lake City. Every barber is talented and knowledgeable. Chris is great and I highly recommend him. Not only for his cuts but also his personality. Never a dull moment in his chair.',
+    review_3: 'Brian is a top-notch barber. Incredible attention to detail. He’ll make sure you laugh the whole time during your haircut. Been coming back to him for almost two years now. The new shop is clean, and the other barbers are professional as well! Cheers.',
+    lat:40.74109475710266,
+    lng:-111.8310688019159
   },
   {
     id: 18,
-    name: "Pied De Vents Cheese",
-    price: "$5.16",
-    country: "Canada",
-    image: "pied-de-vents.jpg"
-  },
+    name: "Curriculum: Barber Shop and Unique Retail Space",
+    country: "United States",
+    image: "Curriculum.png",
+    city: 'Salt Lake City',
+    phone: '(801) 834-7284',
+    review_1: 'Colt is the man to go to. I’ve been going to him for almost a year now and he consistently goes above and beyond with my haircuts. They have a wide selection of high quality products, and I couldn’t recommend this place and Colt more. Do yourself a favor and go to Colt for your next haircut!!.',
+    review_2: 'Fletch is the best barber in SLC, hands down! I made the move here from City Barbers (bad move on their part losing Fletch) and I\'ll follow him as needed! The shop itself is crazy cool, with amazing products for purchase and a vibe that makes you feel comfortable & taken care of.',
+    review_3: 'Such a cool shop. Yet to receive a cut from curriculum but their retail shop is thoughtfully laid out. Very helpful staff. Please support this local gem.',
+    lat:40.7501431848893,
+    lng: -111.86582654240081
+},
   {
     id: 19,
-    name: "Sweet Potato Crackers",
-    price: "$6.81",
+    name: "Avenues Barber",
     country: "United States",
-    image: "crackers.jpg"
+    image: "avenues.png",
+    city: 'Salt Lake City',
+    phone: '(801) 613-1043',
+    review_1: 'Awesome place. Ben is super friendly and nice; he gives a great haircut at an efficient rate and for a killer price, and maintains conversation that\'s both personable and engaging throughout the appointment. Highly recommend.',
+    review_2: 'Ben always does a fantastic job at a reasonable price. He\'s a great guy, who is easy to get a hold of and remembers his regular customers well. I cannot more highly recommend a barber, than Ben.',
+    review_3: 'Such a cool shop. Yet to receive a cut from curriculum but their retail shop is thoughtfully laid out. Very helpful staff. Please support this local gem.',
+    lat:40.77289017948563,
+    lng:-111.87235754424522
   },
   {
     id: 20,
-    name: "Mushrooms",
-    price: "$8.62",
+    name: "Fuzzy Nates Barber Shop",
     country: "United States",
-    image: "mushrooms.jpg"
+    image: "fuzzy.png",
+    phone: '(801) 828-5171',
+    city: 'Salt Lake City',
+    review_1: 'My barber was Jason and I must say, it was the most enjoyable haircut experience I\'\ve had. Good energy, good banter, good vibes, and a damn good haircut. Time to ditch the haircut chains. I\'\ve found my new barber shop.',
+    review_2: 'Love coming here to get my hair taken care of! Nate does a fantastic job and the conversation is always next level! Would recommend to anyone looking to have a good reliable barber!',
+    review_3: 'Recommend !!  I have been twice and the experience has been wonderful.  They have a new barber named Jason, very professional and friendly.  I had a relaxing experience taking a nap while Jason did his work.  Congratulations!',
+    lat:40.72408704802306,
+    lng:-111.89596423747905
   },
-  {
-    id: 21,
-    name: "Jerusalem Artichoke",
-    price: "$3.16",
-    country: "United States",
-    image: "jerusalem-artichoke.jpg"
-  },
-  {
-    id: 22,
-    name: "Leather Leaf Fern",
-    price: "$9.41",
-    country: "Brazil",
-    image: "leather-leaf.jpg"
-  },
-  {
-    id: 23,
-    name: "Dried Apricots",
-    price: "$7.42",
-    country: "Brazil",
-    image: "dried-apricots.jpg"
-  },
-  {
-    id: 24,
-    name: "Navel Orange",
-    price: "$3.53",
-    country: "Brazil",
-    image: "navel-orange.jpg"
-  },
-  {
-    id: 25,
-    name: "Sunflower Oil",
-    price: "$1.90",
-    country: "Mexico",
-    image: "sunflower-oil.jpg"
-  },
-  {
-    id: 26,
-    name: "Black Turtle Beans",
-    price: "$4.67",
-    country: "Canada",
-    image: "turtle-beans.jpg"
-  },
-  {
-    id: 27,
-    name: "Bananas",
-    price: "$2.64",
-    country: "Canada",
-    image: "bananas.jpg"
-
-  },
-  {
-    id: 28,
-    name: "Salami",
-    price: "$8.72",
-    country: "Brazil",
-    image: "salami.jpg"
-  },
-  {
-    id: 29,
-    name: "Proscuitto",
-    price: "$9.86",
-    country: "Brazil",
-    image: "proscuitto.jpg"
-  },
-  {
-    id: 30,
-    name: "Cranberries",
-    price: "$5.85",
-    country: "United States",
-    image: "cranberries.jpg"
-
-  },
-  {
-    id: 31,
-    name: "Canteloupe",
-    price: "$4.49",
-    country: "United States",
-    image: "canteloupe.jpg"
-  },
-  {
-    id: 32,
-    name: "Lemon",
-    price: "$2.8Lemon5",
-    country: "United States",
-    image: "lemon.jpg"
-  },
-  {
-    id: 33,
-    name: "Pesto",
-    price: "$2.67",
-    country: "Brazil",
-    image: "pesto.jpg"
-  },
-  {
-    id: 34,
-    name: "Grapefruit Juice",
-    price: "$4.88",
-    country: "Brazil",
-    image: "grapefruit-juice.jpg"
-
-  },
-  {
-    id: 35,
-    name: "Curry Paste",
-    price: "$2.02",
-    country: "Brazil",
-    image: "curry-paste.jpg"
-  },
-  {
-    id: 36,
-    name: "Avocado Oil",
-    price: "$4.45",
-    country: "Canada",
-    image: "avocado-oil.jpg"
-  },
-  {
-    id: 37,
-    name: "Queso Fresco",
-    price: "$9.24",
-    country: "Canada",
-    image: "queso-fresco.jpg"
-  },
-  {
-    id: 38,
-    name: "Key Lime Pie",
-    price: "$5.32",
-    country: "Mexico",
-    image: "key-lime-pie.jpg"
-  },
-  {
-    id: 39,
-    name: "Granny Smith Apple",
-    price: "$2.12",
-    country: "United States",
-    image: "granny-smith.jpg"
-  },
-  {
-    id: 40,
-    name: "Morning Glory Muffin Mix",
-    price: "$9.22",
-    country: "Brazil",
-    image: "muffin-mix.jpg"
-  },
-  {
-    id: 41,
-    name: "Heavy Whipping Cream",
-    price: "$8.78",
-    country: "Brazil",
-    image: 'heavy-cream.jpg'
-  },
-  {
-    id: 42,
-    name: "Red Bell Pepper",
-    price: "$9.03",
-    country: "Brazil",
-    image: 'red-bell-pepper.jpg'
-  },
-  {
-    id: 43,
-    name: "Perrier",
-    price: "$9.36",
-    country: "United States",
-    image: 'perrier.jpg'
-  },
-  {
-    id: 44,
-    name: "Yukon Gold Potatoes",
-    price: "$8.76",
-    country: "Mexico",
-    image: 'yukon-potatoes.jpg'
-  },
-  {
-    id: 45,
-    name: "Salmon Fillets",
-    price: "$6.21",
-    country: "United States",
-    image: 'salmon-fillets.jpg'
-  },
-  {
-    id: 46,
-    name: "Tilapia Fillets",
-    price: "$4.37",
-    country: "Mexico",
-    image: 'tilapia.jpg'
-  },
-  {
-    id: 47,
-    name: "Tomato Pesto",
-    price: "$9.70",
-    country: "Brazil",
-    image: 'tomato-pesto.jpg'
-  },
-  {
-    id: 48,
-    name: "Oil - Olive Bertolli",
-    price: "$8.92",
-    country: "Brazil",
-    image: 'olive-oil.jpg'
-  },
-  {
-    id: 49,
-    name: "Tear Drop Yellow Tomatoes",
-    price: "$3.32",
-    country: "Mexico",
-    image: 'yellow-tomatoes.jpg'
-  },
-  {
-    id: 50,
-    name: "Smoked Paprika",
-    price: "$8.31",
-    country: "Brazil",
-    image: 'smoked-paprika.jpg'
-  }
 ]
 
 export default mock;

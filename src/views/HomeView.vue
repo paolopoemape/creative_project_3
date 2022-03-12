@@ -1,22 +1,17 @@
 <template>
 <div>
   <div class="wrapper">
-    <div class="search">
-      <form class="pure-form">
-        <i class="fas fa-search"></i><input v-model="searchText" />
-      </form>
     </div>
-  </div>
-  <ProductList :products="products" />
+  <StoreList :stores="stores" />
 </div>
 </template>
 
 <script>
-import ProductList from "../components/ProductList.vue"
+import StoreList from "../components/StoreList.vue"
 export default {
   name: 'HomeView',
   components: {
-    ProductList
+    StoreList
   },
   data() {
     return {
@@ -24,8 +19,8 @@ export default {
     }
   },
   computed: {
-    products() {
-      return this.$root.$data.products.filter(product => product.name.toLowerCase().search(this.searchText.toLowerCase()) >= 0);
+    stores() {
+      return this.$root.$data.stores.filter(store => store.name.toLowerCase().search(this.searchText.toLowerCase()) >= 0);
     }
   },
 }
